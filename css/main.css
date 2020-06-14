@@ -1,0 +1,16 @@
+#titre{
+    margin: 100px 0px 20px 0px;
+  }
+div#border-none.card {
+    border: none!important;
+}
+div#input-text.input-group-text {
+    border-radius: 0px 4px 4px 0px; border-left: none;
+}
+div#icon-right.pretty.p-icon.p-toggle.p-plain{
+    margin-right: 0px
+}
+.svg-inline--fa.fa-eye.fa-w-18{
+    margin-left:2px;
+    color: #495057!important;
+}

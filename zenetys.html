@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Titre -->
+    <title>ZENETYS</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Importation librairies CSS  -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/csss/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Importation librairie ICON  -->
+    <script src="https://kit.fontawesome.com/43ad4b4e25.js"></script>
+    
+    <!-- ICON raccourci  -->
+    <link rel="shortcut icon" type="image" href="logo_senetys.png">
+
+<!-- CSS  -->
+<style>
+ 
+.form-control{
+  cursor: pointer;
+}
+
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+  }
+}
+  
+#sidebar_template{
+  position: fixed!important;
+  min-width: 300px;
+  max-width: 300px;
+  background: linear-gradient(-45deg, #005a78, #128a9b, #002d3b, #062b30);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#content{
+  background-image: url(images/background_senetys.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  padding: 0px!important;
+  background-size: cover;
+}
+
+#navbar_template{
+  padding: 0px!important;
+}
+
+#profil_template{
+  background-image: url(images/ola.png);
+}
+
+#sidebar .logo{
+  width: 250px;
+  height: 70px;
+}
+
+#icon_question:hover{
+  color: #4a86d4!important;
+  transition-duration: 0.4s;
+}
+
+#titre{
+  padding-top: 50px;
+}
+    
+#question{
+  padding-top: 3px;
+}
+  
+.dropdown-toggle::after{
+  color: white;
+}
+
+.dropdown-menu-right{
+    height: 140%;
+    background-image: url(images/fd1.jpg);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.dropdown-divider{
+    margin: 0px!important;
+}
+
+div.tooltip-inner{
+  background-color: #434343;
+}
+
+div.arrow{
+  display: none!important;
+}
+
+#quiter:hover{
+  background-color: white!important;
+  text-shadow: -.10px -.10px 0 #555c63, .10px .10px #555c63;
+  transition-property: all;
+  transition-duration: .16s;
+  transition-timing-function: ease-in;
+  transition-delay: 100ms;
+  font-weight: 400;
+  }
+
+#quiter{
+  color: #555c63;
+  background-image: url(images/fd1.jpg);
+  filter : brightness(96%);
+  padding-bottom: 0px;
+}
+
+#quiter:hover{
+  color: #555c63;
+  background-image: url(images/fd1.jpg);
+  filter : brightness(93%);
+  padding-bottom: 0px;
+}
+
+#quiter2:hover{
+  color: #555c63;
+  background-image: url(images/fd1.jpg);
+  filter : brightness(98%);
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  color: black;
+  text-decoration: none;
+  background-color: #ffffff00;
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    background-color: #ffffff00;
+}
+
+#spb{
+  text-decoration: none;
+  color:#555c63;
+  text-shadow: -.10px -.10px 0 transparent, .10px .10px transparent;
+}
+#spb:hover {
+  text-shadow: -.10px -.10px 0 #555c63, .10px .10px #555c63;
+  transition-property: all;
+  transition-duration: .16s;
+  transition-timing-function: ease-in;
+  transition-delay: 100ms;
+  font-weight: 400;
+}
+
+[type=text] {
+  font-family: 'Roboto', sans-serif;
+}
+
+#exampleModalLongTitle{
+  margin: 0 auto;
+  font-weight: 900!important;
+  font-size: 28px;
+  color: white;
+}
+
+#buttonquite{
+  margin-left: 0px;
+}
+
+.btn-link, #ter{
+  color:black;
+  cursor: pointer;
+}
+
+.btn-link:hover, #ter:hover{
+  text-decoration: none;
+  color: black;
+  text-shadow: -.10px -.10px 0 #555c63, .10px .10px #555c63;
+  transition-property: all;
+  transition-duration: .16s;
+  transition-timing-function: ease-in;
+  transition-delay: 80ms;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-link:active, #ter:active{
+  text-shadow: -.10px -.10px 0 #555c63, .10px .10px #555c63;           
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.card-header{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.modal-body{
+  background-image: url(images/fd1.jpg);
+}
+
+.modal-header, .modal-footer{
+  background: linear-gradient(-45deg, #17b8ce, #128a9b, #0d606b, #062b30);
+	background-size: 400% 400%;
+	animation: gradient 150s ease infinite;
+}
+
+#ragekit:hover{
+color: rgb(218, 218, 218);
+}
+
+.card-header{
+  background-color: #0000000a;
+}
+
+.card-body{
+  padding-bottom: 0px;
+}
+
+@media (max-width: 991px){ 
+  #responsive{
+    display: none;
+  }
+}
+
+#exampleFormControlSelect1, #exampleFormControlTextarea1{
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.inline-flex-parent{
+  display: inline-flex;
+}
+
+#terhmometre{
+text-align: center;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+#ter{
+font-size: 15px;
+font-weight: 500;
+color: #000
+}
+
+#icongrand{
+  font-size: 130%;
+}
+
+#select{
+  color: #494949
+}
+
+#pub{
+  padding-left: 0px;
+    padding-right: 0px;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid{
+    border-color: #b3b3b3;
+}
+
+.invalid-feedback{
+  color: #636363;
+}
+
+a.dropdown-item:hover{
+  filter: brightness(0.9);
+}
+
+#pageMessages{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 30%;
+}
+
+.alert{
+  position: relative;
+}
+
+.alert .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1em;
+}
+
+.alert .fa {
+  margin-right:.3em;
+}
+
+.alert-dismissible{
+  margin-left: -110px;
+  padding-bottom: 0px;
+    padding-right: 20px;
+}
+
+#corp{
+  display: none;
+}
+
+
+@media (max-width: 991px) { 
+  .image
+{position: absolute; 
+    left: 50%!important;
+}
+  
+}
+
+
+.image
+{position: absolute;
+    top: 50%;
+    left: 55%;
+    width: 250px;
+    height: 250px;
+    margin:-120px 0 0 -120px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+	animation:spin 4s linear infinite;
+	
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg);
+
+
+@-moz-keyframes slide{
+	to { margin-left: 90%; }
+}
+
+@-webkit-keyframes slide{
+	to { margin-left: 90%; }
+}
+
+@-ms-keyframes slide{
+	to { margin-left: 90%; }
+}
+
+@-o-keyframes slide{
+	to { margin-left: 90%; }
+}
+
+@keyframes slide{
+	to { margin-left: 90%; }
+}
+</style>
+
+<!-- CSS  -->
+
+
+  </head>
+    <body>
+      <div class="wrapper d-flex align-items-stretch">
+
+<!-- Barre latérale gauche /DEBUT/ -->
+        <nav  class="fixed-left" id="sidebar">
+          <div id="sidebar_template" class="p-4 pt-5">
+            <a href="#" id="profil_template" class="img logo rounded mb-5"></a>
+              <ul class="list-unstyled components mb-5">
+                <li>
+                  <a type="text" href="#"> <i class="fa fa-rss" aria-hidden="true"></i>&nbsp; URL du site à tester</a>
+                </li>
+              </ul>
+
+              <div style="padding-top: 500px; padding-bottom: 1000px">
+               &nbsp;
+              </div>
+
+          </div>
+        </nav>
+<!-- Barre latérale gauche /FIN/ -->
+
+
+<div id="content" class="p-4 p-md-5">
+<!-- Barre de navigation /DEBUT/  -->
+    <nav id="navbar_template" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" style="position: fixed; background-color: white; z-index: 1000; margin-top: 33px; border-bottom-width: 1px; border-bottom-color: #2125292b; border-bottom-style: solid;">
+
+        <button type="button" id="sidebarCollapse" class="btn btn-primary" style="margin: 7px 0px 5px 18px">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label>
+            <div class="dropdown show">
+              <a class="nav-link dropdown-toggle" id="dropdownMenuLink2" data-toggle="dropdown" href="#"><span id="icon_question" data-toggle="tooltip" data-placement="top" title="Aide" style="color: #676767"><i id="question" class="fas fa-question-circle fa-2x"></i></span></a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink2">
+                  <a class="dropdown-item" id="quiter2" href="#"><span type="text" id="spb" data-toggle="modal" data-target="#modalites">Consulter les fonctionnalités</span></a>
+                    <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" id="quiter" type="text" href="#">Fermer</a>
+                </div>
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </nav>
+<!-- Barre de navigation /FIN/  -->
+
+<!-- Chargement logo ZENETYS  -->
+<img class="image" src="logo_senetys.png" alt="" width="300" height="300">
+
+<!-- Contenu DEBUT -->
+<div id="corp" class="container">
+
+  <h1 type="text" id="titre">URL du site à tester</h1>
+
+<!-- Champs URL du site -->
+<label style="font-size: 2.4vh; padding-left: 10px">Veuillez entrer l'adresse URL du site à tester</label>
+<form id="form" name="form">
+  <center>
+    <input id="url" class="form-control" type="url" style="text-align: center; margin-bottom: 20px; width: 94%" value="https://ping.zenetys.com/api" required>
+    <input onclick="ping()" type="button" class="btn btn-primary" id="startbtn" value="Valider"> &nbsp;&nbsp; <input href="#" id="vider" type="button" value="Par default" class="btn btn-secondary" onClick="this.form.reset();">
+
+  </center>
+</form>
+
+<br>
+
+<div id="informations">
+  <div class="card-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-7" id="divaffich" style="text-align: justify; font-size: 20px">
+
+        
+
+          
+          <h4 type="text">Ping</h4>
+          <div style="height: 240px; overflow-y: scroll;">
+            <div id='p_list'></div>
+          </div>
+          <button style="float: right" type="button" class="btn btn-danger btn-sm" onclick="stop_ping()" id="pausebtn">Stop</button>
+            
+          
+
+          
+          
+        </div>
+          <div class="col-5" id="responsive">
+            <img src="images/gif2.gif" alt="..." class="img-thumbnail">
+            <br><br>
+          </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<!-- Modal DEBUT -->
+<div class="modal fade bd-example-modal-lg" id="modalites" tabindex="-1" role="dialog" aria-labelledby="modalites" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" type="text" id="exampleModalLongTitle">Les fonctionnalités</h3>
+        <button id="buttonquite" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span id="ragekit"aria-hidden="true" style="color: white">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="card border-bottom-primary shadow">
+          <div class="card-header" style="display: -webkit-box;padding-bottom: 0px;padding-left: 15px;">
+            <h5 type="text" style="font-weight: 400"> Informations</h5>
+          </div>
+          <div class="card-body">
+            <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+          </div>
+        </div>
+
+        <br>
+
+        <label id="exampleFormControlSelect1">Les fonctionnalités</label>
+        
+        <hr style="margin-top: 0px;">
+
+        <div id="accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <i class="fa fa-rss" aria-hidden="true"></i> URL du site à tester
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body"><div class="container">
+                <div class="row">
+                  <div class="col" style="text-align: justify">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    <span style="float: right;padding-bottom: 8px;"><span style="background-color: #f8b739" class="badge badge-primary"> <a href="#" target="_blank" type="text" style="color: white; margin-bottom: 2px; margin-top: 2px; margin-left: 2px;"><i style="font-size: 8px" class="fas fa-external-link-alt" aria-hidden="true"></i> Plus d'information</a></span></span>
+                  </div>
+                  <div class="col" id="responsive">
+                    <img src="images/gif.gif" alt="..." class="img-thumbnail">
+                     <br><br>
+                   </div>
+                </div>
+              </div>
+              </div>
+           </div>
+
+          </div>
+
+          <br>
+
+          
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-FIN -->
+
+<!-- Importation librairies JS  -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="css/csss/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+
+var intervalTime = null;
+var stop = 0;
+
+// Permet de changer le button stop en reprendre avec en paramètre 0 et 1
+function stop_ping() {
+	if(stop != 1) {
+		 stop = 1;
+		 document.getElementById('pausebtn').innerHTML = 'Reprendre';
+			} else {
+				stop = 0;
+				load($('#url_champ').val(), 1000);
+				document.getElementById('pausebtn').innerHTML = 'Stop';
+			}
+		}
+
+// Permet de changer le button stop en reprendre avec en paramètre 0 et 1
+function getUrl(){ 
+    var $_GET = [];
+    var parts = window.location.search.substr(1).split("&");
+    for (var i = 0; i < parts.length; i++) 
+    {
+        var temp = parts[i].split("=");
+        $_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+    }
+    return ($_GET["url"]);
+}
+
+// Permet de ping l'adresse url rentrer dans le champ de recherche, avec un interval de 1000 ms
+function ping() {
+        var start = new Date().getTime(); 
+        $.ajax({
+            url: $('#url').val(),
+            cache: false,
+            global: false
+        }).always(function () {
+            msec = new Date().getTime() - start; 
+			if(msec > 1000){
+				$("<span style='color: red'>").text("ping vers " + $('#url').val() + " délai dépassé" + " ❌").appendTo("#p_list"); // shows ping list
+			} 
+            else{ 
+				$("<span style='color: green'>").text("ping vers "+ $('#url').val() + " time = " + msec + " ms" + " ✅").appendTo("#p_list"); // shows ping list
+				}
+            $("<br>").appendTo("#p_list"); 
+        });
+	if(stop != 1) setTimeout(ping, 1000);
+}
+// Obtenir le contenu de l'url
+function test() {
+	console.log($('#url').val()())}
+
+// Affichage des info-bulles personalisé
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Affichage du chargement (Logo SENETYS)
+$(document).ready(function(){
+  $(".image").fadeOut(1300, function(){
+    $("#corp").fadeIn(500);});})
+
+</script>
